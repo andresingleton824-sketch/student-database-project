@@ -94,7 +94,7 @@ def add_students(cur):
         cur.execute('''INSERT INTO sample_students (student_id, first_name, last_name, grade, major, email, phone_number)
                        VALUES (?, ?, ?, ?, ?, ?, ?)''', (row[0], row[1], row[2], row[3], row[4], row[5], row[6]))
  
-    # main_menu(sample_students)
+
 def display_sample_students(cur):
     print('Contents of student.db/sample_students table:')
     cur.execute('''SELECT * FROM sample_students''')
